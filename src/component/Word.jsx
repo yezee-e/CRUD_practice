@@ -36,9 +36,12 @@ function Word({ word: w }) {
   function del() {
     if (window.confirm('삭제하시겠습니까?')) {
       //alert창
-      fetch(`http://localhost:3004/words/${word.id}`, {
-        method: 'DELETE',
-      }).then((res) => {
+      fetch(
+        `https://my-json-server.typicode.com/yezee-e/CRUD_practice/words/${word.id}`,
+        {
+          method: 'DELETE',
+        }
+      ).then((res) => {
         if (res.ok) {
           setWord({ id: 0 });
         }

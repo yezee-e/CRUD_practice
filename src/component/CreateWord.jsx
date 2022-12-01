@@ -15,7 +15,7 @@ function CreateWord() {
     if (!isLoading) {
       setIsLoading(true); //fetch 완료되기 전까지 로딩중으로 변경
       fetch(
-        `https://my-json-server.typicode.com/yezee-e/CRUD_practice/words/`,
+        'https://my-json-server.typicode.com/yezee-e/CRUD_practice/words/',
         {
           method: 'POST',
           headers: {

@@ -8,7 +8,7 @@ function CreateDay() {
   );
 
   function addDay() {
-    fetch(`https://my-json-server.typicode.com/yezee-e/CRUD_practice/days`, {
+    fetch('https://my-json-server.typicode.com/yezee-e/CRUD_practice/days', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json', //보내는 리소스의 타입을 의미
